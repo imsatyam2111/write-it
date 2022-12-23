@@ -1,0 +1,29 @@
+.writingCardContainer {
+    width: 100%;
+    height: 260px;
+    background-color: #f8f4f4;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+.writingCardHeader {
+    height: 40px;
+}
+.writingCardBody {
+    height: 170px;
+}
+.writingCardAction {
+    height: 50px;
+    padding-bottom: 8px;
+    text-align: right;
+    display: none;
+}
+
+.writingCardContainer:hover {
+    box-shadow: inset 1px 1px 0 rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(0 0 0 / 7%);
+}
+
+.writingCardContainer:hover > .writingCardAction {
+    display: block;
+}
