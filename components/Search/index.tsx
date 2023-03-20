@@ -1,7 +1,14 @@
 import { TextField, InputAdornment } from "@mui/material";
 import styles from "../../styles/components/Search.module.css";
 import SearchIcon from "@mui/icons-material/Search";
-export const Search = () => {
+
+interface ISearchProps {
+  placeholder: string;
+}
+
+export const Search = (props: ISearchProps) => {
+  const { placeholder } = props;
+
   return (
     <>
       <TextField
@@ -15,7 +22,7 @@ export const Search = () => {
             </InputAdornment>
           ),
         }}
-        placeholder="Search Writings"
+        placeholder={placeholder}
       />
     </>
   );
