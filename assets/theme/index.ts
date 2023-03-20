@@ -5,6 +5,7 @@ const colors = {
     secondary: '#cecece'
 }
 
+
 export const globalTheme = createTheme({
     components: {
         MuiButton: {
@@ -12,14 +13,22 @@ export const globalTheme = createTheme({
               disableElevation: true,
               disableRipple: true, // No more ripple!
             },
-            styleOverrides: {
-              containedPrimary: {
-                backgroundColor: colors.primary,
-                borderRadius: 25,
-                border: '1px solid #a19f9f',
-                color: '#000',
+            // styleOverrides: {
+            //   containedPrimary: {
+            //     backgroundColor: 'red'
+            //   },
+            // },
+            variants: [
+              {
+                props: { variant: 'addButton' },
+                style: {
+                  backgroundColor: colors.primary,
+                  borderRadius: 25,
+                  border: '1px solid #a19f9f',
+                  color: '#000',
+                },
               },
-            },
+            ],
           },
     }
 })

@@ -1,8 +1,9 @@
 import { Fragment, useState } from "react";
 import { Box } from "@mui/material";
 import Link from "next/link";
-import style from "../../styles/Sidebar.module.css";
 import { useRouter } from "next/router";
+import styles from "../../styles/components/Sidebar.module.css";
+import { routes } from "../../utils/routes";
 
 interface navLinkProp {
   key: number;
@@ -13,55 +14,53 @@ interface navLinkProp {
 const navLinks: Array<navLinkProp> = [
   {
     key: 0,
-    label: "Recent",
-    link: "/",
+    label: "Home",
+    link: routes.home,
   },
   {
     key: 1,
     label: "Diaries",
-    link: "/diaries",
+    link: routes.diaries,
   },
   {
     key: 2,
     label: "Notes",
-    link: "/notes",
+    link: routes.notes,
   },
   {
     key: 3,
-    label: "Todo",
-    link: "/todo",
+    label: "Todos",
+    link: routes.todos,
   },
   {
     key: 4,
-    label: "Reminder",
-    link: "/reminder",
+    label: "Cheat Sheets",
+    link: routes.cheatSheets,
   },
   {
     key: 5,
     label: "Expenses",
-    link: "/expenses",
+    link: routes.expenses,
   },
   {
     key: 6,
-    label: "Shopping List",
-    link: "/shoppingList",
+    label: "Lists",
+    link: routes.expenses,
   },
 ];
 
 export const Sidebar = () => {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState(
-    router.pathname === "/" ? "/recent" : router.pathname
-  );
+  const [activeTab, setActiveTab] = useState(router.pathname);
 
   return (
     <Box sx={{ height: "calc(100vh - 74px)" }}>
       {navLinks.map((link) => (
         <Fragment key={link.key}>
-          <Link href={link.link}>
+          <Link className={styles.navLink} href={link.link}>
             <Box
-              className={`${style.sideLinks} ${
-                activeTab === link.link ? style.sideLinkActive : ""
+              className={`${styles.sideLinks} ${
+                activeTab === link.link ? styles.sideLinkActive : ""
               }`}
               onClick={() => setActiveTab(link.link)}
             >

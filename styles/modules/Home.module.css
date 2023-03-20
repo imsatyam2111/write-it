@@ -1,0 +1,41 @@
+.homeContainer {
+    background: #ededf2;
+    height: 100%;
+    padding: 16px 8px;
+}
+
+.homeHeadingText {
+    padding: 8px 0 0 16px;
+}
+
+.homeMain {
+    margin-top: 16px;
+    padding: 8px;
+    width: 75%;
+}
+
+.statCard {
+    width: 400px;
+    height: 120px;
+    padding: 4px 12px;
+    background-color: gainsboro;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.statIconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.statDetails {
+    padding: 8px 18px;
+}
+
+.statCount {
+    /* background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 50%; */
+}

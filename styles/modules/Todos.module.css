@@ -1,0 +1,56 @@
+.todosContainer {
+    background: #ededf2;
+    height: 100%;
+    padding: 16px 24px;
+}
+
+.todosHeading {
+    /* padding: 8px 0 0 16px; */
+    margin-bottom: 16px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.searchInput {
+    width: 60%;
+}
+
+.addTodo {
+    text-align: right;
+    margin: 16px 4px 16px auto;
+}
+
+.addTodoButton {
+    padding: 4px 8px;
+}
+
+.addTodoButtonMobile {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: none ;
+}
+
+/* .todos {
+    margin-top: 16px;
+} */
+
+.todoHeader {
+    padding: 12px 0;
+    /* background-color: #fefefe; */
+    border-bottom: 1px solid rgb(211, 208, 208);
+    margin-bottom: 16px;
+}
+
+.todo {
+    background-color: #fbfbfb;
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 4px;
+    padding: 6px 0;
+    margin: 8px 0;
+}

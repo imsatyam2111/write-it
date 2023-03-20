@@ -4,6 +4,12 @@
     cursor: pointer;
 }
 
+.navLink {
+    color: black !important;
+    text-decoration: none;
+    background-color: blue;
+}
+
 .sideLinkActive {
     background-color: burlywood;
     /* border-radius: 0 25px 25px 0; */

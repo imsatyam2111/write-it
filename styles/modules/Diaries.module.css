@@ -1,0 +1,9 @@
+.diariesContainer {
+    background: #ededf2;
+    height: 100%;
+    padding: 16px 8px;
+}
+
+.diariesHeadingText {
+    color: blue;
+}

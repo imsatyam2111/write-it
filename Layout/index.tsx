@@ -9,6 +9,12 @@ interface layoutProps {
   children: React.ReactNode;
 }
 
+declare module '@mui/material/Button' {
+  interface ButtonPropsVariantOverrides {
+    addButton: true;
+  }
+}
+
 export const MainLayout = ({ children }: layoutProps) => {
   return (
     <ThemeProvider theme={globalTheme}>
